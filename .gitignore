@@ -1,0 +1,27 @@
+ROBOCAR
+# Python
+*.pyc
+__pycache__/
+venv/
+*.egg-info/
+dist/
+build/
+
+# IDEs and editors
+.idea/
+.vscode/
+*.sublime-project
+*.sublime-workspace
+
+# Dependency directories
+env/
+lib/
+bin/
+
+# Logs and databases
+*.log
+*.sqlite3
+
+# Miscellaneous
+*.swp
+.DS_Store
