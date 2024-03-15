@@ -1,0 +1,45 @@
+# Motor Configuration
+[motors]
+  [motors.LF]
+  name = "LF"
+  forward_pin = 22
+  backward_pin = 23
+  enable_pin = 19
+  threshold = 59
+  is_inverted = true
+
+  [motors.LB]
+  name = "LB"
+  forward_pin = 24
+  backward_pin = 25
+  enable_pin = 12
+  threshold = 70
+  is_inverted = true
+
+  [motors.RF]
+  name = "RF"
+  forward_pin = 17
+  backward_pin = 27
+  enable_pin = 18
+  threshold = 70
+  is_inverted = true
+
+  [motors.RB]
+  name = "RB"
+  forward_pin = 5
+  backward_pin = 6
+  enable_pin = 13
+  threshold = 35
+  is_inverted = false
+
+[chassis]
+  [chassis.angular_velocity]
+  max = 110 # Max angular velocity in degrees per second
+[logging]
+level = "DEBUG"
+file = "logs/app.log"
+error_file = "logs/error.log"
+format = "%(asctime)s - %(levelname)s - %(name)s - %(message)s"
+rotate = true
+max_size = 10  # Max log file size in MB
+backup_count = 5  # Number of backup files to keep

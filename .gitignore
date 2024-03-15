@@ -21,7 +21,11 @@ bin/
 # Logs and databases
 *.log
 *.sqlite3
+logs/
 
 # Miscellaneous
 *.swp
 .DS_Store
+
+# playground
+playground/

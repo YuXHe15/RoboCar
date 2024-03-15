@@ -1,0 +1,23 @@
+[tool.poetry]
+name = "robocar"
+version = "0.1.0"
+description = "A modular RoboCar project for controlling and navigating a robotic car."
+authors = ["Yuxiang He <yuxianghe61@gmail.com>"]
+license = "MIT"
+
+[tool.poetry.dependencies]
+python = "^3.9"
+toml = "^0.10.2"
+fastapi = "^0.65.0"
+uvicorn = "^0.14.0"
+
+[[tool.poetry.packages]]
+include = "robocar"
+from = "src"
+
+[tool.poetry.dev-dependencies]
+pytest = "^5.2"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
